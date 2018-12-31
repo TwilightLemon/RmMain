@@ -5,6 +5,7 @@ using System.Data;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
+using System.Windows.Documents;
 
 namespace RmMain
 {
@@ -13,5 +14,6 @@ namespace RmMain
     /// </summary>
     public partial class App : Application
     {
+        public static List<int> list = new List<int>();
     }
 }

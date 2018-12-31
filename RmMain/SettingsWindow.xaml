@@ -4,12 +4,14 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:RmMain"
-        mc:Ignorable="d" Height="119" Width="275" ResizeMode="NoResize" ShowInTaskbar="False" Title="设置" Closing="Window_Closing" WindowStyle="ToolWindow" WindowStartupLocation="CenterScreen">
+        mc:Ignorable="d" Height="147.178" Width="275" ResizeMode="NoResize" ShowInTaskbar="False" Title="设置" Closing="Window_Closing" WindowStyle="ToolWindow" WindowStartupLocation="CenterScreen">
     <Grid>
         <TextBlock HorizontalAlignment="Left" Margin="10,13,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="15.48"><Run Text="速度:"/><LineBreak/><Run/></TextBlock>
-        <Slider x:Name="jd" Margin="41.89,13,10,0" VerticalAlignment="Top" SmallChange="1" Minimum="1"/>
+        <Slider x:Name="jd" Margin="41.89,13,10,0" VerticalAlignment="Top" SmallChange="1" Minimum="1" Maximum="500"/>
         <TextBlock HorizontalAlignment="Left" Margin="10,42.48,0,0" TextWrapping="Wrap" Text="人数:" VerticalAlignment="Top"/>
         <TextBox x:Name="ps" Height="23" Margin="41.89,41.48,10,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" TextChanged="ps_TextChanged"/>
+        <Button Content="Fox" HorizontalAlignment="Right" Height="26" Margin="0,69,10,0" VerticalAlignment="Top" Width="51" Click="Button_Click"/>
+        <TextBox x:Name="sd" HorizontalAlignment="Right" Height="23" Margin="0,71,80,0" TextWrapping="Wrap" Text="Such as 1;2;3" VerticalAlignment="Top" Width="179"/>
 
     </Grid>
 </Window>
