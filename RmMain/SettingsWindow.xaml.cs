@@ -43,5 +43,12 @@ namespace RmMain
         {
             Settings.Default.Save();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            string[] str = sd.Text.Split(';');
+            foreach (var st in str)
+                App.list.Add(int.Parse(st));
+        }
     }
 }
